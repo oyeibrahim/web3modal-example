@@ -115,6 +115,15 @@ function App() {
 
   const connectWalletPressed = async () => {
     open({ view: 'Connect' })
+    // List of views you can select:
+    // https://docs.walletconnect.com/appkit/react/core/hooks
+    // Connect - Principal view of the modal - default view when disconnected
+    // Account - User profile - default view when connected
+    // AllWallets - Shows the list of all available wallets
+    // Networks - List of available networks - you can select and target a specific network before connecting
+    // WhatIsANetwork - "What is a network" onboarding view
+    // WhatIsAWallet - "What is a wallet" onboarding view
+    // OnRampProviders - "OnRamp main view
   };
   // Logout
   const disconnectWalletPressed = async () => {
